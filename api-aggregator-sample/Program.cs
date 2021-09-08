@@ -2,15 +2,13 @@
 using apiaggregator.Imp;
 using System;
 
-namespace TestAPIBridge
+namespace apiaggregator.sample
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ProviderContainer.RegisterAPI(RiskManagementApi.Build());
             ProviderContainer.RegisterAPI(FakeJsonTestApi.Build());
-
             Provider provider = new Provider();
 
             var result = provider.ExecuteApiAsync("get-posts", "Json").Result;

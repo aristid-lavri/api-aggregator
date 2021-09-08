@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>api_aggregator_test</RootNamespace>
+    <RootNamespace>apiaggregator.test</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>

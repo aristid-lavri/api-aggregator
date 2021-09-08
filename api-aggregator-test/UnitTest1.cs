@@ -3,7 +3,7 @@ using apiaggregator.Imp;
 using apiaggregator.Model;
 using NUnit.Framework;
 
-namespace api_aggregator_test
+namespace apiaggregator.test
 {
     public class Tests
     {
