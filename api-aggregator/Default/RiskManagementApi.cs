@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ApiBridge.Default
+namespace apiaggregator.Default
 {
     public sealed class RiskManagementApi
     {
@@ -8,19 +8,19 @@ namespace ApiBridge.Default
         {
             return new ApiBuilder.ApiServiceBuilder()
                 .ConfigServeur("Risk", new Uri("https://localhost:44356/"), null)
-                .AddEndPoint(new ApiBridge.Model.EndPoint
+                .AddEndPoint(new apiaggregator.Model.EndPoint
                 {
                     Name = "get-weatherforecast",
                     RelativeUrl = "weatherforecast",
-                    Method = ApiBridge.Model.ApiMethod.GET,
-                    ParameterType = ApiBridge.Model.ParameterType.Query
+                    Method = apiaggregator.Model.ApiMethod.GET,
+                    ParameterType = apiaggregator.Model.ParameterType.Query
                 })
-                .AddEndPoint(new ApiBridge.Model.EndPoint
+                .AddEndPoint(new apiaggregator.Model.EndPoint
                 {
                     Name = "post-weatherforecast",
                     RelativeUrl = "weatherforecast",
-                    Method = ApiBridge.Model.ApiMethod.POST,
-                    ParameterType = ApiBridge.Model.ParameterType.Dictionary
+                    Method = apiaggregator.Model.ApiMethod.POST,
+                    ParameterType = apiaggregator.Model.ParameterType.Dictionary
                 });
         }
     }

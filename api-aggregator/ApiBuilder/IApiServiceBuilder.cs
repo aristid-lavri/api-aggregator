@@ -1,7 +1,7 @@
-﻿using ApiBridge.Model;
+﻿using apiaggregator.Model;
 using System;
 
-namespace ApiBridge.ApiBuilder
+namespace apiaggregator.ApiBuilder
 {
     public interface IApiServiceBuilder
     {

@@ -1,8 +1,8 @@
-﻿using ApiBridge.ApiBuilder;
-using ApiBridge.Model;
+﻿using apiaggregator.ApiBuilder;
+using apiaggregator.Model;
 using System.Collections.Generic;
 
-namespace ApiBridge.Imp
+namespace apiaggregator.Imp
 {
     public class ProviderContainer
     {

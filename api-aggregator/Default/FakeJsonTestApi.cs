@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ApiBridge.Default
+namespace apiaggregator.Default
 {
     public class FakeJsonTestApi
     {
@@ -9,12 +9,12 @@ namespace ApiBridge.Default
         {
             return new ApiBuilder.ApiServiceBuilder()
                 .ConfigServeur("Json", new Uri("https://jsonplaceholder.typicode.com/"), null)
-                .AddEndPoint(new ApiBridge.Model.EndPoint
+                .AddEndPoint(new apiaggregator.Model.EndPoint
                 {
                     Name = "get-posts",
                     RelativeUrl = "posts",
-                    Method = ApiBridge.Model.ApiMethod.GET,
-                    ParameterType = ApiBridge.Model.ParameterType.None
+                    Method = apiaggregator.Model.ApiMethod.GET,
+                    ParameterType = apiaggregator.Model.ParameterType.None
                 });
         }
     }
