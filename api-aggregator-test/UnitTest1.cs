@@ -1,6 +1,6 @@
-using ApiBridge.Default;
-using ApiBridge.Imp;
-using ApiBridge.Model;
+using apiaggregator.Default;
+using apiaggregator.Imp;
+using apiaggregator.Model;
 using NUnit.Framework;
 
 namespace api_aggregator_test
@@ -13,7 +13,7 @@ namespace api_aggregator_test
             ProviderContainer.RegisterAPI(FakeJsonTestApi.Build());
             var api = ProviderContainer.ResolveAPI("Json");
 
-            Assert.IsInstanceOf(typeof(ApiService),api);
+            Assert.IsInstanceOf(typeof(ApiService), api);
         }
     }
 }

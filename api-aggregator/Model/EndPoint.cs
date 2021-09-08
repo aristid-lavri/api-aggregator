@@ -1,4 +1,4 @@
-﻿namespace ApiBridge.Model
+﻿namespace apiaggregator.Model
 {
     public class EndPoint
     {

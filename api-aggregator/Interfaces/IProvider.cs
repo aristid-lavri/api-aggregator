@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace ApiBridge.Interfaces
+namespace apiaggregator.Interfaces
 {
     public interface IProvider
     {

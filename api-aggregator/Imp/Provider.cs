@@ -1,5 +1,5 @@
-﻿using ApiBridge.Interfaces;
-using ApiBridge.Model;
+﻿using apiaggregator.Interfaces;
+using apiaggregator.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApiBridge.Imp
+namespace apiaggregator.Imp
 {
     public sealed class Provider : IProvider
     {

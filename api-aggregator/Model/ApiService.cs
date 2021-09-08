@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ApiBridge.Model
+namespace apiaggregator.Model
 {
     public class ApiService
     {

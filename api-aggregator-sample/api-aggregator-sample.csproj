@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ApiBridge\api-aggregator.csproj" />
+    <ProjectReference Include="..\api-aggregator\api-aggregator.csproj" />
   </ItemGroup>
 
 </Project>

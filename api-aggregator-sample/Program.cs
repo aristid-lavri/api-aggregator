@@ -1,10 +1,6 @@
-﻿using ApiBridge;
-using ApiBridge.ApiBuilder;
-using ApiBridge.Default;
-using ApiBridge.Imp;
+﻿using apiaggregator.Default;
+using apiaggregator.Imp;
 using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace TestAPIBridge
 {
@@ -17,7 +13,7 @@ namespace TestAPIBridge
 
             Provider provider = new Provider();
 
-            var result = provider.ExecuteApiAsync( "get-posts", "Json").Result;
+            var result = provider.ExecuteApiAsync("get-posts", "Json").Result;
             var data = result.Content.ReadAsStringAsync();
             Console.WriteLine(result.StatusCode);
             Console.WriteLine(data.Result);
