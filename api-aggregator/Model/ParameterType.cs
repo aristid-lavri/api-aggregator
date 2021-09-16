@@ -6,6 +6,7 @@
         Url,
         Dictionary,
         Json,
-        None
+        TextPlain,
+        TextCsv,
     }
 }
