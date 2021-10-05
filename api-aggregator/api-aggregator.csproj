@@ -7,6 +7,8 @@
     <Authors>Lavri</Authors>
     <RepositoryUrl>https://github.com/aristid-lavri/api-aggregator</RepositoryUrl>
     <PackageLicenseFile>licence.txt</PackageLicenseFile>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

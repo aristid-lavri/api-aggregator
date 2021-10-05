@@ -49,7 +49,7 @@ namespace apiaggregator.Imp
             bool isQueryFormated = false;
             foreach (var item in parameters)
             {
-                var endPointParameter = api.EndPoints.SelectMany(e => e.Parameters).Single(p => p.Key == item.Key);
+                var endPointParameter = target.Parameters.SingleOrDefault(p => p.Key == item.Key);
                 if (endPointParameter.ParameterType == ParameterType.Query)
                 {
                     if (!isQueryFormated)
