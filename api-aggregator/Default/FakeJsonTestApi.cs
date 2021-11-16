@@ -40,6 +40,11 @@ namespace apiaggregator.Default
                         },
                         new EndPointParameter
                         {
+                            Key = "test",
+                            ParameterType = ParameterType.Query
+                        },
+                        new EndPointParameter
+                        {
                             Key = "weather",
                             ParameterType = ParameterType.TextPlain
                         }

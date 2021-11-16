@@ -3,12 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>apiaggregator</RootNamespace>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Lavri</Authors>
     <RepositoryUrl>https://github.com/aristid-lavri/api-aggregator</RepositoryUrl>
     <PackageLicenseFile>licence.txt</PackageLicenseFile>
-    <Version>1.0.1</Version>
+    <Version>1.0.4</Version>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.4.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

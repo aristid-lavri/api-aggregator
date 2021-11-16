@@ -103,8 +103,13 @@ namespace apiaggregator.Imp
 
 
             var sTargetUrl = targetUrl.ToString();
-            sTargetUrl = sTargetUrl.Remove(sTargetUrl.LastIndexOfAny(new char[] { '&', '/' }), 1);
-            request.RequestUri = new Uri(api.BaseUrl, targetUrl.ToString());
+            var indexOfQueryChar = sTargetUrl.LastIndexOfAny(new char[] { '&', '/' });
+            if (indexOfQueryChar != -1)
+            { 
+                sTargetUrl = sTargetUrl.Remove(indexOfQueryChar, 1);
+            }
+
+            request.RequestUri = new Uri(api.BaseUrl, sTargetUrl);
             return await client.SendAsync(request);
         }
     }
