@@ -70,8 +70,6 @@ namespace apiaggregator.Imp
                     targetUrl.Append("/");
                 }
 
-                targetUrl.Remove(targetUrl.Length - 1, 1);
-
                 if (endPointParameter.ParameterType == ParameterType.Dictionary)
                 {
                     var _keyValue = new List<KeyValuePair<string, string>>();
@@ -103,6 +101,9 @@ namespace apiaggregator.Imp
                 }
             }
 
+
+            var sTargetUrl = targetUrl.ToString();
+            sTargetUrl = sTargetUrl.Remove(sTargetUrl.LastIndexOfAny(new char[] { '&', '/' }), 1);
             request.RequestUri = new Uri(api.BaseUrl, targetUrl.ToString());
             return await client.SendAsync(request);
         }
